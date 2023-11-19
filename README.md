@@ -1,4 +1,22 @@
-# Hackathon_Ohana_dfx
+# FastChain 1.0.0 <br> Hackathon Ohana - dfx version
+
+## NOTE: This is a dfx version for backend testing and for easier setup across different devices. <br> ! This repo is not intended to be passed as submission for the Hackathon final !
+### Edited by KanadeTachie (King Behimino). Please do not remove
+
+---
+### Kanade's Notes: <br>
+1. Download repo
+2. Open Vscode and select repo as workspace
+3. Run new terminal and type "ubuntu"
+4. Type "explorer.exe ." (space included)
+5. Move downloaded repo to "home/[user]"
+6. Go back to Vscode and type "cd [repo folder name]"
+7. type "dfx generate"
+8. type "dfx build"
+9. type "dfx deploy"
+10. ctrl + click on local links provided and you are set.
+
+---
 
 Welcome to your new Hackathon_Ohana_dfx project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
