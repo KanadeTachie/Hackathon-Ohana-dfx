@@ -1,0 +1,55 @@
+/* invoice.css */
+.invoice-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+   padding: 10px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+.invoice-table th {
+   background-color: #f2f2f2;
+}
+
+.invoice-table tr:last-child td {
+   border-bottom: none;
+}
+.fields td{
+   background-color: #f5f3e0;
+   font-weight: bolder;
+   color:#3f2b27;
+}
+.total-row {
+   position: relative;
+   background-color: #f5f3e0;
+   border-radius: 10px;
+   color: white;
+}
+
+.total-row::before {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: calc(100% - 5px);
+   background-color: inherit;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+.total-label {
+   text-align: right;
+}
+
+.total-value {
+   text-align: right;
+   color: #3f2b27;
+   font-weight:800;
+}
+
+

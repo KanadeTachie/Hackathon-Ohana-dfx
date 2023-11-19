@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Hackathon_Ohana_dfx_backend": {
+      "main": "src/Hackathon_Ohana_dfx_backend/main.mo",
+      "type": "motoko"
+    },
+    "Hackathon_Ohana_dfx_frontend": {
+      "dependencies": [
+        "Hackathon_Ohana_dfx_backend"
+      ],
+      "source": [
+        "src/Hackathon_Ohana_dfx_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "dfx":"0.15.1",
+  "version": 1
+}

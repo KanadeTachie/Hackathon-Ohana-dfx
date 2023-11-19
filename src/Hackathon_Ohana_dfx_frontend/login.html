@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page in HTML with CSS Code Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="loginstyle.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <h1 class="title">FAST Franchising</h1>
+                <p class="details">Fast Franchising, the ultimate destination for entrepreneurs seeking to expand their
+                    businesses
+                    through franchising.</p>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h5>Login</h5>
+            <p>Welcome Back Admin! Login now to edit and add more franchise locations.</p>
+            <div class="inputs">
+                <input id="username" type="text" placeholder="Username">
+                <br>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+
+            <br><br>
+
+
+
+            <br>
+            <button onclick="login()">Login</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password are correct (dummy check)
+            if (username === "admin" && password === "password") {
+                alert("Login successful!");
+                window.location.href = "index_admin.html"; // Redirect to index.html
+
+                // Redirect or perform other actions for admin
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+</body>
+
+</html>

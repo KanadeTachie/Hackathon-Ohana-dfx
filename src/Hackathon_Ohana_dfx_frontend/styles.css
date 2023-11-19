@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ebe6d6;
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #f1efe7;
+    padding: 24px;
+}
+.sidebar .logo img{
+    width: 130px;
+}
+.sidebar .navigation ul{
+     list-style: none;
+     margin-top: 20px;
+}
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+}
+.sidebar .navigation ul li a{
+    color: #7f675b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa{
+    color: #b3b3b3;
+}
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus{
+    color: #ffffff;
+    
+}
+.sidebar .policies{
+    position: absolute;
+    bottom: 50px;
+}
+.sidebar .policies ul{
+    list-style: none;
+    margin-top: 70%;
+}
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+    margin-top: 10px;
+ }
+ 
+.sidebar .policies ul li a{
+    color: #7f675b;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+    
+}
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus{
+    text-decoration: underline;
+}
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebe6d6;
+    padding: 14px 30px;
+}
+.topbar .prev-next-buttons button{
+    color: #ebe6d6;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #7f675b;
+    margin-right: 10px;
+}
+.topbar .navbar{
+    display: flex;
+    align-items: center;
+}
+.topbar .navbar ul{
+    list-style: none;
+}
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+.topbar .navbar ul li a{
+    color: #7f675b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px; 
+}
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus{
+    color: #ffffff;
+    font-size: 15px;
+}
+.topbar .navbar ul li.divider{
+    color: #7f675b;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+}
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus{
+    background-color: #f2f2f2;
+}
+.spotify-playlists{
+    padding: 20px 40px;
+}
+.spotify-playlists h2{
+    color: #7f675b;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlists .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlists .list .item{
+    min-width: 140px;
+    width: 240px;
+    padding: 15px;
+    background-color: #f5f3e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover{
+    background-color: #7f675b;
+}
+.spotify-playlists .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play{
+    position: relative;
+}
+.spotify-playlists .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #7f675b;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.fas fa-minus{
+    color:#3f2b27;
+}
+.spotify-playlists .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4,h5{
+    color: #494b42;
+    font-size: 12px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis;
+}
+.spotify-playlists .list .item p{
+    color: #3f2b27;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.spotify-playlists hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+.spotify-playlists .list a{
+    text-decoration: none;
+    color: #252525;
+}
+
+/* About page */
+.content{
+    padding: 20px 40px;
+}
+.headTitle{
+    color: #7f675b;
+    margin-bottom: 40px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .developers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto; /* Center the container horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+/* About page */
+.content{
+    padding: 20px 40px;
+}
+.headTitle{
+    color: #7f675b;
+    margin-bottom: 40px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: rgb(220, 197, 70);
+    color: white;
+    transform: rotateY(180deg);
+}
+.developers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto; /* Center the container horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+.projcontent {
+    color: #7f675b;
+}
+.projcontent h2{
+    margin-top: 40px;
+}
+.projcontent p{
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 1in;
+}
+.nameInfo{
+    margin-top: 40px;
+}
+.contactInfo{
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+.searchbar{
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search__container {
+    padding-top: 64px;
+}
+.search__input {
+    width: 100%;
+    padding: 12px 24px;
+
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    background-color: transparent;
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        
+        &::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        &:hover,
+        &:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+}
+.location{
+    margin-left: 2px;
+}
